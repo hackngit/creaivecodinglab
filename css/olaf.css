@@ -1,0 +1,333 @@
+/*
+*, h1, figure {
+    border: 0 none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;*/
+/*}
+*, *::before, *::after, input[type="search"] {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    -moz-osx-font-smoothing: grayscale;
+}
+html {
+}
+html {
+}
+svg {
+    fill: currentcolor;
+    pointer-events: none;
+    vertical-align: middle;
+}
+ul, ol {
+    list-style: outside none none;
+}
+em {
+    font-style: italic;
+}
+b {
+    font-weight: inherit;
+}
+i {
+    font-style: inherit;
+}
+ins {
+    text-decoration: none;
+}*/
+/*input, textarea, select {
+    border: medium none;
+    border-radius: 0;
+}
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+input[type="text"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="url"], textarea, select {
+    -moz-appearance: textfield;
+}
+button, input[type="submit"] {
+    background-color: transparent;
+    border: medium none;
+}
+
+
+
+html {
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+[hidden], template {
+    display: none;
+}*/
+/*a {
+    background: transparent none repeat scroll 0 0;
+}
+a:active, a:hover {
+    outline: 0 none;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+b, strong {
+    font-weight: bold;
+}
+dfn {
+    font-style: italic;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+mark {
+    background: #ff0 none repeat scroll 0 0;
+    color: #000;
+}
+small {
+    font-size: 80%;
+}
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+img {
+    border: 0 none;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+figure {
+    margin: 1em 40px;
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+pre {
+    overflow: auto;
+}
+code, kbd, pre, samp {
+    font-family: monospace,monospace;
+    font-size: 1em;
+}*/
+/*button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+button {
+    overflow: visible;
+}
+button, select {
+    text-transform: none;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+button[disabled], html input[disabled] {
+    cursor: default;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0 none;
+    padding: 0;
+}
+input {
+    line-height: normal;
+}
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+input[type="search"] {
+    box-sizing: content-box;
+}
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+legend {
+    border: 0 none;
+    padding: 0;
+}
+textarea {
+    overflow: auto;
+}
+optgroup {
+    font-weight: bold;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, th {
+    padding: 0;
+}
+
+*/
+/*
+@import "_normalize.css";
+@import "_defaults.css";*/
+/*body, .ad, .sm {
+    font-family: Lucida Grande,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
+}*/
+/*a {
+    color: currentcolor;
+    text-decoration: none;*/
+/*}
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.ad {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.75);
+    left: 0.625rem;
+    padding: 0.5rem 0.625rem;
+    position: fixed;
+    top: 0.625rem;
+    width: 9.375rem;
+    z-index: 1000;
+}
+.ad--dark {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.75);
+}
+.ad__close {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    height: 0.625rem;
+    position: absolute;
+    right: -0.25rem;
+    top: -0.25rem;
+    transition: transform 0.25s ease-in-out 0s;
+    width: 0.625rem;
+    z-index: 1;
+}
+.ad--dark .ad__close {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.ad__close:hover, .ad__close:focus {
+    transform: scale(1.25);
+}
+#carbonads {
+    font-size: 0.875rem;
+    letter-spacing: -0.071em;
+    line-height: 1.125rem;
+}
+#carbonads a {
+    color: currentcolor;
+    display: block;
+    margin-top: 0.313rem;
+}
+#carbonads .carbon-poweredby {
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+.ad--dark #carbonads .carbon-poweredby {
+    color: rgba(255, 255, 255, 0.25);
+}
+.sm {
+    background-color: rgba(255, 255, 255, 0.5);
+    bottom: 0;
+    color: rgba(0, 0, 0, 0.75);
+    height: 2.5rem;
+    left: 0;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+}
+.sm--dark {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.75);
+}
+.sm ul {
+}
+.sm li {
+    float: right;
+    margin-left: 1rem;
+}
+.sm li:first-child {
+    float: left;
+    margin-left: 0;
+}
+.sm .googleplus-one {
+    max-width: 60px;
+}
+.sm .twitter-follow > *:not(:first-child), .sm .twitter-share > *:not(:first-child) {
+    display: none;
+}*/
+@media screen {
+@media (min-width: 0px) {
+.sm li:last-child {
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out 0s;
+}
+.sm:hover li:last-child {
+    opacity: 1;
+}
+}
+}
+.sm__back {
+    color: currentcolor;
+    font-size: 0.875rem;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+}
+.sm__back::before {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent currentcolor transparent -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid solid none;
+    border-width: 0.313rem 0.313rem 0.313rem medium;
+    content: "";
+    display: inline-block;
+    height: 0;
+    left: 0;
+    margin-right: 0.313rem;
+    position: relative;
+    transition: left 0.25s ease-in-out 0s;
+    width: 0;
+}
+.sm__back:hover::before, .sm__back:focus::before {
+    left: -0.313rem;
+}
+@media screen and (max-width: 40em), screen and (max-height: 40em) {
+.ad, .sm {
+    display: none;
+}
+}
