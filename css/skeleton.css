@@ -457,7 +457,7 @@ there.
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #ed225d;
 }
 
 .main_nav li {
@@ -476,12 +476,12 @@ there.
 }
 
 .main_nav li a:hover {
-  background-color: #424242;
+  background-color: #d81f55;
   cursor: pointer;
 }
 
 .main_nav li a:hover:not(.active) {
-  background-color: #424242;
+  background-color: #d81f55;
 }
 
 /*sub menu*/
@@ -505,7 +505,7 @@ there.
 .main_nav ul ul li {
   float: none;
   display: list-item;
-  border-bottom: 1px solid #383737;
+  border-bottom: 1px solid #d81f55;
 
 }
 
