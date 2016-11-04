@@ -417,6 +417,38 @@ there.
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
 
+/* My Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  .main_nav li:not(:first-child) {display: none;}
+  .main_nav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  .main_nav.responsive {position: relative;}
+  .main_nav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .main_nav.responsive li {
+    float: none;
+    display: inline;
+  }
+  .main_nav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+
 /* My Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -486,6 +518,8 @@ there.
 }
 
 
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+.main_nav li.icon {display: none;}
 
 
 
