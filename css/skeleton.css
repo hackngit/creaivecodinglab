@@ -521,7 +521,11 @@ there.
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 .main_nav li.icon {display: none;}
 
-
+/* My Creative Commons license
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.creative_commons{
+  font-size: 0.66em;
+}
 
 /* Footer Class
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
