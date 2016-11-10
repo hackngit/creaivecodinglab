@@ -53,15 +53,6 @@
               </li>
           </ul>
       </nav> 
-      <script src="jquery.min.js"></script>
-      <script src="doubleTapToGo.js"></script>
-      <script>
-          $( function()
-          {
-            $( '#nav li:has(ul)' ).doubleTapToGo();
-          });
-      </script>
-
     </div>
   </nav> 
 </header>
@@ -100,6 +91,44 @@
     </div>
     </div>  
   </footer>
+
+<!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>
+   // DOM ready
+   $(function() {
+     
+      // Create the dropdown base
+      $("<select />").appendTo("nav div");
+      
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Go to..."
+      }).appendTo("nav select");
+      
+      // Populate dropdown with menu items
+      $("nav a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   : el.attr("href"),
+           "text"    : el.text()
+       }).appendTo("nav select");
+      });
+      
+     // To make dropdown actually work
+     // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+      $("nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+   
+   });
+  </script>
+
+
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
