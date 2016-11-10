@@ -452,6 +452,24 @@ there.
 /* My Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+@media only screen and ( max-width: 62.5em ) /* 1000 */
+    {
+      #nav
+      {
+        width: 100%;
+        position: static;
+        margin: 0;
+      }
+    }
+
+@media only screen and ( max-width: 40em ) /* 640 */
+    {
+      html
+      {
+        font-size: 75%; /* 12 */
+      }
+    }
+    
 .main_nav ul {
   list-style-type: none;
   margin: 0;
