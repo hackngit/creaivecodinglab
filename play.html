@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Creative Code Lab</title>
+  <meta name="Art + Open Data + p5*js" content="">
+  <meta name="Graham Newman" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" type="text/css"> 
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+ <!--  <link rel="stylesheet" href="css/olaf.css"> -->
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Main Nav
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<header class="main_nav">
+  <nav class="container">
+    <div class="sixteen columns">
+      <nav id="nav" role="navigation">
+          <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="play.html" target="blank">play</a></li>
+              <li><a href="https://www.openprocessing.org/user/68463" target="blank">learn</a></li>
+              <li><a href="?make">make</a></li>
+              <li>
+                  <a href="?the research" aria-haspopup="true">the research</a>
+                  <ul>
+                      <li><a href="#">impact</a></li>
+                      <li><a href="#">literature review</a></li>
+                      <li><a href="examples.html">methods of intent</a></li>
+                       <li><a href="#">acknowledgements</a></li><li><a href="#">analysis</a></li>
+                  </ul>
+                  <li><a href="about.html">about</a></li>
+              </li>
+          </ul>
+      </nav> 
+    </div>
+  </nav> 
+</header>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 25%">
+        <h2>Play with p5js</h2>
+        <iframe src="https://toolness.github.io/p5.js-widget/p5-widget.html?id=1&amp;baseSketchURL=https%3A%2F%2Ftoolness.github.io%2Fp5.js-widget%2Fnull&amp;sketch=%0Afunction%20setup()%20%7B%0A%20%20createCanvas(100%2C%20100)%3B%0A%7D%0A%0Afunction%20draw()%20%7B%0A%20%20background(255%2C%200%2C%20200)%3B%0A%7D%0A" style="width: 100%; background-color: white; border: 1px solid #ec245e; box-sizing: border-box; min-height: 300px"></iframe>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="row twelve columns">
+
+  <!-- Social Links
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <ul class="social">
+      <li class="twitter"><a href="https://twitter.com/hackngit/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+      <li class="linkedin"><a href="https://www.linkedin.com/groups/Creative-Coding-Lab-10325371/about" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+      <li class="github"><a href="https://github.com/departmentofdata" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>    
+    </ul>
+  <!-- Creative Commons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <hr> 
+    <div class="creative_commons">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+    </div>
+    </div>  
+  </footer>
+
+<!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>
+   // DOM ready
+   $(function() {
+     
+      // Create the dropdown base
+      $("<select />").appendTo("nav div");
+      
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Go to..."
+      }).appendTo("nav select");
+      
+      // Populate dropdown with menu items
+      $("nav a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   : el.attr("href"),
+           "text"    : el.text()
+       }).appendTo("nav select");
+      });
+      
+     // To make dropdown actually work
+     // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+      $("nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+   
+   });
+  </script>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
